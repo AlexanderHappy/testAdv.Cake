@@ -13,6 +13,7 @@ class Solution
 
     $this->word = '';
 
+    // Проходим циклом
     for ($i = 0; $i < count($array_from_string); $i++) {
       if (in_array($array_from_string[$i], $punctuation_hyphen_apostrophe)) {
         array_push($this->workpiece, $this->word);
@@ -49,7 +50,7 @@ $answer = (new Solution())
   ->makeWorkpieceBySplitString('cat,')
   ->reverseStringInArray()
   ->getArray();
-  
+
 print_r($answer);
 
 ?>
